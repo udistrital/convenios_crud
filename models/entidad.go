@@ -10,7 +10,7 @@ import (
 )
 
 type Entidad struct {
-	Id           int         `orm:"column(id);pk"`
+	Id           int         `orm:"column(id);pk;auto"`
 	Direccion    string      `orm:"column(direccion)"`
 	Correo       string      `orm:"column(correo)"`
 	Telefono     string      `orm:"column(telefono)"`

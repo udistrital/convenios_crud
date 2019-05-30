@@ -10,7 +10,7 @@ import (
 )
 
 type Convenio struct {
-	Id                int            `orm:"column(id);pk"`
+	Id                int            `orm:"column(id);pk;auto"`
 	Descripcion       string         `orm:"column(descripcion)"`
 	Responsable       string         `orm:"column(responsable)"`
 	CorreoResponsable string         `orm:"column(correo_responsable)"`

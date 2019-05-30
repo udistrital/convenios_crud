@@ -10,7 +10,7 @@ import (
 )
 
 type PaisCategoria struct {
-	Id   int `orm:"column(id);pk"`
+	Id   int `orm:"column(id);pk;auto"`
 	Pais int `orm:"column(pais);null"`
 }
 
