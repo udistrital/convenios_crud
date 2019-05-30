@@ -48,8 +48,8 @@ paths:
           description: ""
           schema:
             $ref: '#/definitions/models.Categoria'
-        "403":
-          description: ""
+        "404":
+          description: not found resource
     post:
       tags:
       - categoria
@@ -65,8 +65,8 @@ paths:
       responses:
         "201":
           description: '{int} models.Categoria'
-        "403":
-          description: body is empty
+        "400":
+          description: the request contains incorrect syntax
   /categoria/{id}:
     get:
       tags:
@@ -84,8 +84,8 @@ paths:
           description: ""
           schema:
             $ref: '#/definitions/models.Categoria'
-        "403":
-          description: :id is empty
+        "404":
+          description: not found resource
     put:
       tags:
       - categoria
@@ -108,8 +108,8 @@ paths:
           description: ""
           schema:
             $ref: '#/definitions/models.Categoria'
-        "403":
-          description: :id is not int
+        "400":
+          description: the request contains incorrect syntax
     delete:
       tags:
       - categoria
@@ -124,8 +124,8 @@ paths:
       responses:
         "200":
           description: '{string} delete success!'
-        "403":
-          description: id is empty
+        "404":
+          description: not found resource
   /convenio/:
     get:
       tags:
@@ -163,8 +163,8 @@ paths:
           description: ""
           schema:
             $ref: '#/definitions/models.Convenio'
-        "403":
-          description: ""
+        "404":
+          description: not found resource
     post:
       tags:
       - convenio
@@ -180,8 +180,8 @@ paths:
       responses:
         "201":
           description: '{int} models.Convenio'
-        "403":
-          description: body is empty
+        "400":
+          description: the request contains incorrect syntax
   /convenio/{id}:
     get:
       tags:
@@ -199,8 +199,8 @@ paths:
           description: ""
           schema:
             $ref: '#/definitions/models.Convenio'
-        "403":
-          description: :id is empty
+        "404":
+          description: not found resource
     put:
       tags:
       - convenio
@@ -223,8 +223,8 @@ paths:
           description: ""
           schema:
             $ref: '#/definitions/models.Convenio'
-        "403":
-          description: :id is not int
+        "400":
+          description: the request contains incorrect syntax
     delete:
       tags:
       - convenio
@@ -239,8 +239,8 @@ paths:
       responses:
         "200":
           description: '{string} delete success!'
-        "403":
-          description: id is empty
+        "404":
+          description: not found resource
   /entidad/:
     get:
       tags:
@@ -278,8 +278,8 @@ paths:
           description: ""
           schema:
             $ref: '#/definitions/models.Entidad'
-        "403":
-          description: ""
+        "404":
+          description: not found resource
     post:
       tags:
       - entidad
@@ -295,8 +295,8 @@ paths:
       responses:
         "201":
           description: '{int} models.Entidad'
-        "403":
-          description: body is empty
+        "400":
+          description: the request contains incorrect syntax
   /entidad/{id}:
     get:
       tags:
@@ -314,8 +314,8 @@ paths:
           description: ""
           schema:
             $ref: '#/definitions/models.Entidad'
-        "403":
-          description: :id is empty
+        "404":
+          description: not found resource
     put:
       tags:
       - entidad
@@ -338,8 +338,8 @@ paths:
           description: ""
           schema:
             $ref: '#/definitions/models.Entidad'
-        "403":
-          description: :id is not int
+        "400":
+          description: the request contains incorrect syntax
     delete:
       tags:
       - entidad
@@ -354,8 +354,8 @@ paths:
       responses:
         "200":
           description: '{string} delete success!'
-        "403":
-          description: id is empty
+        "404":
+          description: not found resource
   /estados/:
     get:
       tags:
@@ -393,8 +393,8 @@ paths:
           description: ""
           schema:
             $ref: '#/definitions/models.Estados'
-        "403":
-          description: ""
+        "404":
+          description: not found resource
     post:
       tags:
       - estados
@@ -410,8 +410,8 @@ paths:
       responses:
         "201":
           description: '{int} models.Estados'
-        "403":
-          description: body is empty
+        "400":
+          description: the request contains incorrect syntax
   /estados/{id}:
     get:
       tags:
@@ -429,8 +429,8 @@ paths:
           description: ""
           schema:
             $ref: '#/definitions/models.Estados'
-        "403":
-          description: :id is empty
+        "404":
+          description: not found resource
     put:
       tags:
       - estados
@@ -453,8 +453,8 @@ paths:
           description: ""
           schema:
             $ref: '#/definitions/models.Estados'
-        "403":
-          description: :id is not int
+        "400":
+          description: the request contains incorrect syntax
     delete:
       tags:
       - estados
@@ -469,8 +469,8 @@ paths:
       responses:
         "200":
           description: '{string} delete success!'
-        "403":
-          description: id is empty
+        "404":
+          description: not found resource
   /naturaleza/:
     get:
       tags:
@@ -508,8 +508,8 @@ paths:
           description: ""
           schema:
             $ref: '#/definitions/models.Naturaleza'
-        "403":
-          description: ""
+        "404":
+          description: not found resource
     post:
       tags:
       - naturaleza
@@ -525,8 +525,8 @@ paths:
       responses:
         "201":
           description: '{int} models.Naturaleza'
-        "403":
-          description: body is empty
+        "400":
+          description: the request contains incorrect syntax
   /naturaleza/{id}:
     get:
       tags:
@@ -544,8 +544,8 @@ paths:
           description: ""
           schema:
             $ref: '#/definitions/models.Naturaleza'
-        "403":
-          description: :id is empty
+        "404":
+          description: not found resource
     put:
       tags:
       - naturaleza
@@ -568,8 +568,8 @@ paths:
           description: ""
           schema:
             $ref: '#/definitions/models.Naturaleza'
-        "403":
-          description: :id is not int
+        "400":
+          description: the request contains incorrect syntax
     delete:
       tags:
       - naturaleza
@@ -584,8 +584,8 @@ paths:
       responses:
         "200":
           description: '{string} delete success!'
-        "403":
-          description: id is empty
+        "404":
+          description: not found resource
   /pais_categoria/:
     get:
       tags:
@@ -623,8 +623,8 @@ paths:
           description: ""
           schema:
             $ref: '#/definitions/models.PaisCategoria'
-        "403":
-          description: ""
+        "404":
+          description: not found resource
     post:
       tags:
       - pais_categoria
@@ -640,8 +640,8 @@ paths:
       responses:
         "201":
           description: '{int} models.PaisCategoria'
-        "403":
-          description: body is empty
+        "400":
+          description: the request contains incorrect syntax
   /pais_categoria/{id}:
     get:
       tags:
@@ -659,8 +659,8 @@ paths:
           description: ""
           schema:
             $ref: '#/definitions/models.PaisCategoria'
-        "403":
-          description: :id is empty
+        "404":
+          description: not found resource
     put:
       tags:
       - pais_categoria
@@ -683,8 +683,8 @@ paths:
           description: ""
           schema:
             $ref: '#/definitions/models.PaisCategoria'
-        "403":
-          description: :id is not int
+        "400":
+          description: the request contains incorrect syntax
     delete:
       tags:
       - pais_categoria
@@ -699,8 +699,8 @@ paths:
       responses:
         "200":
           description: '{string} delete success!'
-        "403":
-          description: id is empty
+        "404":
+          description: not found resource
 definitions:
   models.Categoria:
     title: Categoria
