@@ -15,7 +15,7 @@ Para instalar el proyecto de debe relizar lo siguientes pasos:
 
 Ejecutar desde la terminal 'go get repositorio':
 ```shell 
-go get https://github.com/udistrital/convenios_crud
+go get github.com/udistrital/convenios_crud
 ```
 
 ## Opción 2
