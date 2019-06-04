@@ -38,7 +38,7 @@ cd convenios_crud
 
 4. Instalar dependencias del proyecto:
 ```shell 
-got get
+go get
 ```
 
 
