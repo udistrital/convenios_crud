@@ -15,3 +15,7 @@ swagger/images/
 swagger/lang/
 swagger/lib/
 
+./refactor_controller/
+refactor_controller/
+ejec.sh
+
